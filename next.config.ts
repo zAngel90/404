@@ -1,8 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  basePath: '/404error.com',
-  assetPrefix: '/404error.com/',
+  distDir: 'dist',
   images: {
     unoptimized: true,
   },
