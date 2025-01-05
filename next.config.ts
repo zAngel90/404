@@ -1,18 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  basePath: '',
+  basePath: '/404error.com',
+  trailingSlash: true,
   images: {
     unoptimized: true,
-  },
-  async redirects() {
-    return [
-      {
-        source: '/',
-        destination: '/404',
-        permanent: true,
-      },
-    ]
   },
 }
 
