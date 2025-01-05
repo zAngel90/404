@@ -2,7 +2,7 @@
 const nextConfig = {
   output: 'export',
   basePath: '/404error.com',
-  trailingSlash: true,
+  assetPrefix: '/404error.com/',
   images: {
     unoptimized: true,
   },
