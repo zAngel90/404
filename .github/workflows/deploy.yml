@@ -29,15 +29,11 @@ jobs:
 
       - name: Prepare for deployment
         run: |
-          cp app/404.tsx out/index.tsx
           touch out/.nojekyll
-          echo '<!DOCTYPE html><meta http-equiv="refresh" content="0;url=/404error.com/">' > out/404.html
+          cp out/404.html out/index.html
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: out
-          branch: gh-pages
-          clean-exclude: |
-            .nojekyll
-            404.html 
+          branch: gh-pages 
