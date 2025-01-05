@@ -27,12 +27,14 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Add .nojekyll file
-        run: touch ./dist/.nojekyll
+      - name: Prepare for deployment
+        run: |
+          touch out/.nojekyll
+          cp out/404.html out/index.html
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: dist
+          folder: out
           branch: gh-pages
           clean: true 
