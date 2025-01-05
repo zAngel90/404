@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Página de Error 404 Moderna
 
-## Getting Started
+Una página de error 404 moderna y estética construida con Next.js y TailwindCSS. Perfecta para mostrar mensajes de error de una manera elegante y profesional.
 
-First, run the development server:
+## Características
 
+- ✨ Diseño moderno y minimalista
+- 🎨 Animaciones suaves y elegantes
+- 📱 Totalmente responsive
+- 🎯 Optimizada para rendimiento
+- 🌈 Efectos visuales atractivos
+
+## Tecnologías Utilizadas
+
+- Next.js 13+
+- TypeScript
+- TailwindCSS
+- CSS Animations
+
+## Instalación
+
+1. Clona el repositorio:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/zAngel90/404error.com.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Instala las dependencias:
+```bash
+cd 404error.com
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Inicia el servidor de desarrollo:
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Abre [http://localhost:3000](http://localhost:3000) en tu navegador.
 
-## Learn More
+## Personalización
 
-To learn more about Next.js, take a look at the following resources:
+Puedes personalizar los colores editando las variables CSS en `app/globals.css`:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```css
+:root {
+  --primary: #2563eb;
+  --secondary: #3b82f6;
+  --accent: #60a5fa;
+}
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Licencia
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+MIT
